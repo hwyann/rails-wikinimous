@@ -1,4 +1,8 @@
 <div class="container">
+  <div class="d-flex justify-content-start align-items-start">
   <h2> <%= @article.title %> </h2>
+  <%= link_to '', edit_article_path, class: 'fas fa-edit' %>
+  <%= link_to '', articles_path, method: :delete, data: {alert: 'Confirm delete?'}, class: 'fas fa-edit' %>
+  </div>
   <p> <%= @article.content %> </p>
 </div>
